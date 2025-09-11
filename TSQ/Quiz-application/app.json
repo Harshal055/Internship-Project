@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Quiz-application",
+    "slug": "Quiz-application",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "statusBarStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses audio for text-to-speech functionality in quizzes.",
+        "NSSpeechRecognitionUsageDescription": "This app uses speech synthesis for reading quiz questions and providing audio feedback.",
+        "NSCameraUsageDescription": "This app uses the camera to take photos for quiz questions.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to photo library to select images for quiz questions.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.harshalll.Quizapplication"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.harshalll.Quizapplication",
+      "statusBar": {
+        "barStyle": "dark-content",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ffc29eff-d1a6-4233-8fd6-d4d9196f19c5"
+      }
+    }
+  }
+}
